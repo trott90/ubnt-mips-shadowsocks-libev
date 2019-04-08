@@ -52,7 +52,9 @@ git clone https://github.com/jedisct1/libsodium \
 
 echo -e "$green Installing libev...$end"
 cd
-wget http://dist.schmorp.de/libev/libev-$libev_ver.tar.gz \
+#wget http://dist.schmorp.de/libev/libev-$libev_ver.tar.gz \
+#change to mirror site for libev, since schmorp.de cannot access in CN
+wget https://fossies.org/linux/misc/libev-$libev_ver.tar.gz \
     && tar xvf libev-$libev_ver.tar.gz \
     && cd libev-$libev_ver \
     && ./configure --host=$host --prefix=$prefix_path/libev --disable-shared \
