@@ -1,7 +1,7 @@
 From buildpack-deps:xenial-scm
 LABEL maintainer="MMX <4isnothing@gmail.com>"
 
-ENV ARCHITECH=mips
+ENV ARCHITECH=mips64
 WORKDIR /opt/ss-mips/
 COPY . .
 RUN apt update && apt install -y \
